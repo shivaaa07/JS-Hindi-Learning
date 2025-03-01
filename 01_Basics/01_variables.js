@@ -1,20 +1,16 @@
-const accountId = 144553;
-let accountEmail = "shivaa@google.com";
-var accountPassword = "12345";
-accountCity = "Jaipur";
-let accountState;
+const authorName = "Shiva Sahani";
+let authorAge = 28;
+var profile = "SDE-II"
+authorCity = "Jaipur";
+let authorState;
 
-// accountId = 9076123;     // Not Allowed
+// authorName = "Jyoti Das" // Not Allowed to reassign the Value
 
-accountEmail = "jyotidas@gmail.com";
-accountPassword = "JyotiDas@27";
-accountCity = "Mumbai";
+authorAge = 20;     // not allow to redeclare but reassign allow
+profile = "Frontend Developer"       // both allow redeclare and reassign
+authorCity = "Mumbai"               // do not declare variable this type
 
-{
-    let accountEmail = "shiva@google.com";
-    // console.log(accountEmail);
-}
+// console.log(authorAge);
 
-// console.log(accountEmail);
+console.table([authorName, authorAge, profile, authorCity, authorState])
 
-console.table([accountId, accountEmail, accountPassword, accountCity, accountState]);
