@@ -44,4 +44,28 @@ function reverseString(str) {
     return str.split('').reverse().join('');
 }
 
-console.log(reverseString("12345"))
+// console.log(reverseString("12345"))
+
+// 5) Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers.
+
+function evenNumbers(nums) {
+    return nums.filter(num => num % 2 == 0 )
+}
+
+// console.log(evenNumbers(numbers))
+
+// 6) Write a JavaScript program to calculate the factorial of a given number. 
+
+// 5! = 5*4*3*2*1
+
+function factorial(terms) {
+    let res = 1;
+    let value
+    while(res < terms){
+        terms *= (terms - res)
+        res++
+    }
+    return terms
+}
+
+// console.log('The Factorial of 5 is :', factorial(5))
