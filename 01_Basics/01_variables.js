@@ -1,16 +1,20 @@
-const authorName = "Shiva Sahani";
-let authorAge = 28;
-var profile = "SDE-II"
-authorCity = "Jaipur";
-let authorState;
+/*
+ JavaScript has three type of DataTypes
+ 1) var
+ 2) let 
+ 3) const
+*/
 
-// authorName = "Jyoti Das" // Not Allowed to reassign the Value
+const userAaddharCardNumber = 744841193358;
+let userName = "Shiva Sahani";
+var age = 28;
+city = "Jaipur";
+let userState = null;
 
-authorAge = 20;     // not allow to redeclare but reassign allow
-profile = "Frontend Developer"       // both allow redeclare and reassign
-authorCity = "Mumbai"               // do not declare variable this type
+// userAaddharCardNumber = 123456789011;           // can not re-assign the value aggain in const variable
+userName = "Shivaa Sahaniii";             // can not re-declare the variable but re-assign the value in let variable allow
+var age = 18;                   // re-declare and re-assign the value in "var" keyword is allowed do not use this keyword for variable assignment
 
-// console.log(authorAge);
+city = "Mumbai"             // Do not use this types of variable declaration this is bad practies
 
-console.table([authorName, authorAge, profile, authorCity, authorState])
-
+console.table([userAaddharCardNumber, userName, age, city, userState]);

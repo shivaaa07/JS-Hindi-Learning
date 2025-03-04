@@ -1,35 +1,39 @@
-"use strict"        // treat all JS code as newer version
+"use strict"        // Treat all JS code as newer version of JS
 
-// alert("Shiva Sahani");      // we are using node.js not broswer
+// alert("Hello Shivaa");           // we are using node.js not a broswer
 
-// console.log( 3 + 3 )  console.log("Shivaa")        // This is not a good practies to write code in single line
+// console.log(3 + 3) console.log("Shiva")     // code readability should less
 
 console.log(
-    3
+    3 
     +
     3
-);              // Code readability should be high and JS remove the line break and white space but this is not good practies
+)               // This is also not a good practie to write a code 
 
-
-let userName = "Shiva Sahani";
-let age = 28;
-let isLoggedIn = false;
 
 /*
-1) String
-2) Number => 2 to Power 53
-3) bigInt
-4) Boolean
-5) null => standalone value
-6) undefined => undefined
-7) symbol
+JS have Two Types of DataTypes
+1) Primitive
+    - String
+    - Number
+    - Boolean
+    - null
+    - undefined
+    - bigInt
+    - Symbol
+2) Non-Primitive
+    - Array
+    - Object
+    - Function
+*/ 
 
-++++++++++++++ Non-Primitive Data Type ++++++++++++++++++++
-1) Object
-2) Array
-*/
+let userName = "Shiva";
+let userAge = 28;
+let isLoggedIn = false;
+let status;
 
-console.log(typeof undefined);
-
-
-
+console.log(userName)
+console.log(userAge)
+console.log(isLoggedIn)
+console.log(null)
+console.log(status)

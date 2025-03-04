@@ -1,68 +1,50 @@
-// DataType Conversion
-// +++++++++++++++++++++++ Number +++++++++++++++
+// ++++++++++++++++++++ Conversion ++++++++++++++++++++
+let score = null;
 
-let score = "shiva";
+// let { score } = req.body;
 
 let scoreInNumber = Number(score);
 
-// console.log(scoreInNumber)
-// console.log(typeof(scoreInNumber));
+// if (scoreInNumber != NaN) {
+//     return res.send("Please Enter Valid Number.")
+// }
+
+// console.log(scoreInNumber);
+// console.log(typeof scoreInNumber);
 
 /*
-    1) "" => 0
-    2) "Shiva" => NaN
-    3) true => 1; false => 0
-    4) "33" => 33
-    5) null => 0
-    6) undefined => NaN
+    "33abc" => NaN
+    "33" => Number(33)
+    "" => 0
+    undefined => NaN
+    null => 0
+    true => 1; false => 0
 */
 
-// +++++++++++++++++++++++ Boolean +++++++++++++++
-
+// Boolean
 let isLoggedIn = undefined;
 
-let booleanIsLoggedIn = Boolean(isLoggedIn);
+let BooleanIsLoggedIn = Boolean(isLoggedIn);
 
-// console.log(booleanIsLoggedIn);
-// console.log(typeof booleanIsLoggedIn);
+// console.log(BooleanIsLoggedIn);
+// console.log(typeof BooleanIsLoggedIn);
 
 /*
-    1) "" => false
-    2) "Shiva" => true
-    3) 1 => true
-    4) 0 => false
-    5) null => false; undefined => false
+    "" => false; "Shiva" => true
+    null => false: undefined => false
+    1 => true; 0 => false
 */
 
-// +++++++++++++++++++++++ String +++++++++++++++
-
-let str =null;
-
-let valueInString = String(str);
-
-// console.log(valueInString)
-// console.log(typeof valueInString)
-
-// +++++++++++++++++++++++ Operation ++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++ Operation ++++++++++++++++++++++++++++++
 
 // console.log(2 + 2);
 // console.log(2 - 2);
 // console.log(2 * 2);
-// console.log(2 ** 3);
-// console.log(2 / 3);
-// console.log(2 % 3);
+// console.log(2 ** 2);
+// console.log(2 / 2);
+// console.log(2 % 2);
 
-// console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
-
-// console.log(+true)
-// console.log(+false)
-// console.log(+null)
-// console.log(+undefined)
-
-let gameCounter = 100;
-// let result = gameCounter++;     // Postfix Operation
-let result = ++gameCounter;     // prefix Operation
-console.log(result)
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
