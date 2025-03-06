@@ -1,56 +1,60 @@
-// Two Types of DataTypes in JS
-
-// Primitive(call by value)
-
 /*
-call by value : how to store value in memory and how to use and pass to another variable
-Ex. 
-    let num1 = 10;
-    let num2 = num1;        <- copy of num1 is pass 
-
+In JS have Two Types of DataTypes.
+1) Primitive
     - String
     - Number
     - Boolean
-    - null
+    - Null
     - undefined
-    - symbol
     - BigInt
+    - Symbol
+2) Non-Primitive
+    - Array
+    - Object
+    - function
 */
 
+let userName = "Shiva";
+let age = 28;
+let isLoggedIn = false;
+let outSiteTemp = null;
+let state;
 
-const authorName = "Shiva";
-const age = 26;
-const isLoggedIn = false;
-const outSiteTemp = null;
-const authorEmail = undefined;
-
-const id = Symbol(123);
-const anotherId = Symbol(123);
-
-// console.log(id === anotherId)
+let firstUserId = Symbol(123)
+let secondUserId = Symbol(123)
 
 
-// Non-primitive(call by reference)
+// console.log(firstUserId === secondUserId)
 
-/*
-    call by reference : reference of the value given in memory
-    Ex.
-        const myObj = {
-            name: "Shiva",
-            age: 28
-        }
-        const obj2 = myObj;     <- pass the reference of the myObj value into obj2
-
-    Array, Objbect, function
-*/
-
-const myArray = [1, 2, 3, 4, 5];
-const myObj = {
-    name: "Shiva",
-    age: 28
+const obj1 = {
+    name: "Sahani",
+    city: "Thane"
 }
-const myFun = function() {
-    console.log("Hello World!")
-} 
 
-myFun()
+// console.log(typeof obj1)
+
+// ++++++++++++++++++++++++++++++ Stack and Heap Memory +++++++++++++++++++++++++++++
+
+// stack (Primitive)
+let firstUserCompanyName = "Realatte";
+
+let secondUserCompanyName = firstUserCompanyName;
+
+secondUserCompanyName = "Chai aur Code"
+
+// console.log(firstUserCompanyName);
+// console.log(secondUserCompanyName);
+
+// Heap (Non-primitive)
+
+let obj2 = {
+    email : "user@google.com",
+    isAdmin: false
+};
+
+let obj3 = obj2;
+
+obj3.email = "shiva@google.com"
+
+console.log(obj2);
+console.log(obj3);
