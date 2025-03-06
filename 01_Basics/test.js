@@ -56,16 +56,28 @@ function evenNumbers(nums) {
 
 // 6) Write a JavaScript program to calculate the factorial of a given number. 
 
-// 5! = 5*4*3*2*1
+// 5! = 5*4*3*2*1;
 
-function factorial(terms) {
-    let res = 1;
-    let value
-    while(res < terms){
-        terms *= (terms - res)
-        res++
+let number = 6;
+
+// Using For Loop
+// function factorial(nums) {
+//     let res = nums;
+//     for (let i = 1; i < nums; i++) {
+//         res *= nums - i
+//     }
+//     return res;
+// }
+
+// Using Recursive Function
+
+function factorial(num) {
+    if (num === 0 || num === 1) {
+        return 1;
     }
-    return terms
+    else{
+        return num * factorial(num - 1);
+    }
 }
 
-// console.log('The Factorial of 5 is :', factorial(5))
+console.log(`The Factorial of ${number} is : ${factorial(number)}`);
