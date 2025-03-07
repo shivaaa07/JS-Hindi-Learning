@@ -1,8 +1,8 @@
 /*
 +++++++++++++++++++++ String Prototype Learn ++++++++++++++++++++++++++++
-1) charAt()
-2) concat()
-3) at()
+1) charAt()     - Not allow to take negative integer 
+2) concat()     - adding or attched two or more string with nth number of parameters
+3) at()         - allow to take negative integer that return the value from last position of the string
 4) constructor
 5) includes()
 6) indexOf()
@@ -32,4 +32,11 @@ const repoCount = 50;
 
 const gameName = new String("shivass");
 
-console.log(gameName);
+// console.log("charAt method value :", gameName.charAt(null));       // Negative number are not accepted
+
+// console.log("at method value :", userName.at(-1));
+
+console.log(userName.concat(" Sahani", " How are You ?", " I'm fine", repoCount));
+console.log(userName + " " + repoCount)
+
+console.log(userName.concat(" ", repoCount));
