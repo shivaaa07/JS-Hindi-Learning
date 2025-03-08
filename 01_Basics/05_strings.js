@@ -5,9 +5,9 @@
 3) at()         - allow to take negative integer that return the value from last position of the string
 4) constructor  - when we can use new keyword then return the Object of String or when we can use without new keyword it return the value of string Primitive datatype 
 5) includes()   - It's take 2 arguments first what word/letter search and second what position start searching
-6) indexOf()
-7) lastIndexOf()
-8) match()
+6) indexOf()    - It return the index of that subString value
+7) lastIndexOf()- It return the last index of subString value
+8) match()      - it take RegExp of string and return the array of all subString 
 9) matchAll()
 10) repeat()
 11) replace()
@@ -52,10 +52,16 @@ const sym = Symbol("exmaple");
 // console.log(typeof String(sym));
 
 
-const myMessage = "The quick brown fox jumps over the lazy dog."
+const myMessage = "The quick brown fox jumps over the lazy dOg."
 
-console.log(myMessage.includes("dog", 6));
+// console.log(myMessage.includes("dog", 6));
 
-console.log(myMessage.length);
+// console.log(myMessage.length);
+
+
+// console.log(myMessage.length)
+// console.log(myMessage.indexOf(undefined))
+
+console.log(myMessage.match(/o/gi));
 
 
