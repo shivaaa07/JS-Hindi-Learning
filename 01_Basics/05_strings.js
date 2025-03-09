@@ -9,7 +9,7 @@
 7) lastIndexOf()- It return the last index of subString value
 8) match()      - it take RegExp of string and return the array of all subString 
 9) matchAll()
-10) repeat()
+10) repeat()    - any word/sentence you can repeat then use repeat Method
 11) replace()
 12) replaceAll()
 13) search()
@@ -52,7 +52,7 @@ const sym = Symbol("exmaple");
 // console.log(typeof String(sym));
 
 
-const myMessage = "The quick brown fox jumps over the lazy dOg."
+const myMessage = "The quick brown fox jumps over the lazy dog."
 
 // console.log(myMessage.includes("dog", 6));
 
@@ -62,6 +62,19 @@ const myMessage = "The quick brown fox jumps over the lazy dOg."
 // console.log(myMessage.length)
 // console.log(myMessage.indexOf(undefined))
 
-console.log(myMessage.match(/o/gi));
+// console.log(myMessage.match(/o/gi));
+
+let mood = "Sad😢 "
+
+// console.log(`I'm very ${mood.repeat(3.7)}`)
+
+const paragraph = "I think Ruth's dog is cuter than your dog!";
+
+console.log(paragraph.replace("Ruth's", "my"));
+// Expected output: "I think my dog is cuter than your dog!"
+
+const regex = /Dog/gi;
+console.log(paragraph.replace(regex, "ferret"));
+// Expected output: "I think Ruth's ferret is cuter than your dog!"
 
 
