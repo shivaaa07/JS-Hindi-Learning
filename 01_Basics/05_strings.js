@@ -23,13 +23,18 @@ const gameName = new String("hitesh-hc-com");
 
 // console.log(gameName.substring(5, 3));
 
-console.log(gameName);
+// console.log(gameName);
 
 // console.log(gameName.slice(5, 3));
 
-console.log(gameName.replaceAll("-", "_"))
+// console.log(gameName.replaceAll("-", "_"))
 
 // console.log(gameName.split("-"))
+
+const str = "The-quick-brown-fox-jumps-over-the-lazy-dog.";
+
+console.log(str.split("-", 3))
+
 
 /*
     String Methods in JavaScript
@@ -43,5 +48,7 @@ console.log(gameName.replaceAll("-", "_"))
     8) slice()
     9) replace()    - Only First Match will be replace
     10) replaceAll() - Replcae All Match will be replace
-    11) 
+    11) includes()  - check provided string or word are availble in that sentence
+    12) split()
+    13) toString()
 */
