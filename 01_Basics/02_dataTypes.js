@@ -1,17 +1,29 @@
-"use strict";       // Treat all code as newer version of JS code
+"use strict";       // Treat all Code as newer version of JavaScript
 
-// alert("Hitesh Sir");     // we are using node.js not broswer
+// alert("Hello World!");        // we are using node.js not broswer
 
-console.log( 3
-     + 
-     3)         // Code readability should we high do not prefer to write this type of code
+// console.log("Shiva")  console.log("Sahani")       // Not to write this type of code because code readability should be high
 
-// console.log("Shiva")
+console.log(
+     3
+     +
+     3
+)         // Prefer not to use
 
-let userName = "Shiva";
+/*
+     Number => 2 to power 53
+     String => "Shiva"
+     Boolean => true/false
+     null => Standalone value
+     undefined => 
+     symbol => Unique datatype
+
+     Object
+*/
+
+
+let userName = "Shiva Sahani";
 let age = 28;
-let isLoggedIn = false;
-let outSideTemp = null;
+let isLoggedIn = true
 
-
-console.log(typeof outSideTemp)
+console.log(typeof undefined);
