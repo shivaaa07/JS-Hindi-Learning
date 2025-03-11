@@ -1,50 +1,73 @@
-// ++++++++++++++++++++ Conversion ++++++++++++++++++++
-let score = null;
-
-// let { score } = req.body;
+let score = undefined;
 
 let scoreInNumber = Number(score);
 
-// if (scoreInNumber != NaN) {
-//     return res.send("Please Enter Valid Number.")
-// }
+console.log(typeof(scoreInNumber));
 
-// console.log(scoreInNumber);
-// console.log(typeof scoreInNumber);
+console.log(scoreInNumber);
 
 /*
-    "33abc" => NaN
-    "33" => Number(33)
-    "" => 0
-    undefined => NaN
-    null => 0
+    "33" => 33;
+    "33Abc" => NaN
     true => 1; false => 0
+    null => 0;
+    undefined => NaN
 */
 
-// Boolean
-let isLoggedIn = undefined;
+const isLoggedIn = undefined;
 
-let BooleanIsLoggedIn = Boolean(isLoggedIn);
+const booleanIsLoggedIn = Boolean(isLoggedIn)
 
-// console.log(BooleanIsLoggedIn);
-// console.log(typeof BooleanIsLoggedIn);
+console.log(typeof booleanIsLoggedIn)
+console.log(booleanIsLoggedIn);
 
 /*
-    "" => false; "Shiva" => true
-    null => false: undefined => false
-    1 => true; 0 => false
+    "Shiva" => true
+    "" => false
+    null => false
+    undefined => false
+    1 => true
+    0 => false
 */
 
-// ++++++++++++++++++++++++++++++++++++++++ Operation ++++++++++++++++++++++++++++++
+let str = true;
 
-// console.log(2 + 2);
-// console.log(2 - 2);
-// console.log(2 * 2);
-// console.log(2 ** 2);
-// console.log(2 / 2);
-// console.log(2 % 2);
+let valueInString = String(str)
 
-console.log("1" + 2);
-console.log(1 + "2");
-console.log("1" + 2 + 2);
-console.log(1 + 2 + "2");
+console.log(typeof valueInString);
+console.log(valueInString);
+
+// All value converted in string
+
+// ++++++++++++++++++++++++++++++++ Operation ++++++++++++++++++++++++
+
+console.log(2 + 2);
+console.log(2 - 2);
+console.log(2 * 2);
+console.log(2 / 2);
+console.log(2 % 2);
+
+console.log( "1" + 2 );
+console.log( 1 + "2" );
+console.log( "1" + 2 + 2 );
+console.log( 1 + 2 + "2" );
+
+let str1 = "Hello ";
+let str2 = "World";
+let str3 = str1 + str2;
+
+console.log(str3)
+
+console.log(+true)
+console.log(+false)
+console.log(+null)
+console.log(+undefined)
+console.log(+"")
+console.log(+"Shiva")
+
+let gameCount = 100;
+
+let res = gameCount++;
+let res2 = ++gameCount;
+console.log(res)
+console.log(res2)
