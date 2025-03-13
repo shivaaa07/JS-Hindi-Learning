@@ -7,3 +7,5 @@ console.log(myDate.toJSON());
 console.log(myDate.toLocaleDateString());
 
 console.log(myDate.toLocaleString())
+
+console.log(myDate.getFullYear())
