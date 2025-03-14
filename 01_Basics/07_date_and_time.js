@@ -2,10 +2,27 @@
 
 const myDate = new Date();
 
-console.log(myDate);
-console.log(myDate.toJSON());
-console.log(myDate.toLocaleDateString());
+// console.log(myDate);
+// console.log(myDate.toDateString());
+// console.log(myDate.toISOString()); // it return some as default value like this console.log(myDate)
+// console.log(myDate.toJSON()); // return some as toISOString method result
 
-console.log(myDate.toLocaleString())
+// console.log(myDate.toLocaleDateString());
+console.log(
+  myDate.toLocaleString("default", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    dayPeriod: "long",
+  })
+);
+// console.log(myDate.toLocaleTimeString());
+// console.log(myDate.toLocaleString());
 
-console.log(myDate.getFullYear())
+const myCreatedDate = new Date(2025, 2, 14);
+
+console.log(myCreatedDate.toDateString());
