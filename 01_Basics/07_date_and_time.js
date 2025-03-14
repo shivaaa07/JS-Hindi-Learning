@@ -2,10 +2,10 @@
 
 const myDate = new Date();
 
-// console.log(myDate);
-// console.log(myDate.toDateString());
-// console.log(myDate.toISOString()); // it return some as default value like this console.log(myDate)
-// console.log(myDate.toJSON()); // return some as toISOString method result
+console.log(myDate);
+console.log(myDate.toDateString());
+console.log(myDate.toISOString()); // it return some as default value like this console.log(myDate)
+console.log(myDate.toJSON()); // return some as toISOString method result
 
 // console.log(myDate.toLocaleDateString());
 console.log(
@@ -20,9 +20,13 @@ console.log(
     dayPeriod: "long",
   })
 );
-// console.log(myDate.toLocaleTimeString());
-// console.log(myDate.toLocaleString());
+console.log(myDate.toLocaleTimeString());
+console.log(myDate.toLocaleString());
 
-const myCreatedDate = new Date(2025, 2, 14);
+const myCreatedDate = new Date("2025-03-30");
 
-console.log(myCreatedDate.toDateString());
+// console.log(myCreatedDate.toString());
+console.log(myCreatedDate.toLocaleString());
+console.log(myCreatedDate.getFullYear());
+console.log(myCreatedDate.getDate());
+console.log(myCreatedDate.getDay());
