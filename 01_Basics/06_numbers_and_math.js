@@ -1,17 +1,34 @@
-const score = 40000;
+const score = 400459;
 
-console.log(score.toExponential(2));
+// const { price } = req.body;     // "100"
 
-console.log(score.toFixed(2));
-console.log(score.toLocaleString("en-IN"));
-console.log(score.toString().length);
+const gameCount = new Number(100.345);
 
-// ++++++++++++++++++++++++ Maths ++++++++++++++++++++++++
+console.log(typeof score);
+console.log(gameCount.toString());
+console.log(gameCount.toFixed(2)); // after the dicimal how many digits take
 
-const minNumber = 1;
-const maxNumber = 6;
-const randomNumber = Math.floor(Math.random() * maxNumber);
-const dicsNumber = randomNumber + minNumber;
+console.log(score.toExponential(3));
 
-// console.log(randomNumber);
-console.log("The Dics Number is :", dicsNumber);
+console.log(score.toLocaleString("en-US"));
+
+// ++++++++++++++++++++++++++ Maths +++++++++++++++++++++++++++
+
+const randomNumber = Math.floor(Math.random() * 10);
+
+// console.log(randomNumber + 10);
+
+console.log(Math.ceil(4.2));
+console.log(Math.floor(4.7));
+console.log(Math.round(4.2));
+
+console.log(Math.pow(2, 0));
+
+function showMessage(marks) {
+  const message = marks || "Absent";
+  console.log(`Marks is : ${message}`);
+}
+
+showMessage(75);
+showMessage(0);
+showMessage(50);
