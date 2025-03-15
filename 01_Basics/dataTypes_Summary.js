@@ -1,60 +1,61 @@
 /*
-In JS have Two Types of DataTypes.
-1) Primitive
-    - String
-    - Number
-    - Boolean
-    - Null
-    - undefined
-    - BigInt
-    - Symbol
-2) Non-Primitive
-    - Array
-    - Object
-    - function
+    JavaScript has two Types of Datatypes.
+    1) Primitive
+        - String
+        - Number
+        - Boolean
+        - BigInt
+        - null
+        - undefined
+        - symbol
+    2) Non-Primitive
+        - Object
+        - Array
+        - Function
 */
 
 let userName = "Shiva";
-let age = 28;
-let isLoggedIn = false;
-let outSiteTemp = null;
-let state;
 
-let firstUserId = Symbol(123)
-let secondUserId = Symbol(123)
+let otherUserName = userName;
 
+otherUserName = "Sahani";
 
-// console.log(firstUserId === secondUserId)
+// console.log("userName is :", userName);
+// console.log("otherserName is :", otherUserName);
+// console.log("userName is :", userName);
 
-const obj1 = {
-    name: "Sahani",
-    city: "Thane"
-}
+let age = 18;
 
-// console.log(typeof obj1)
+let originalAge = age;
 
-// ++++++++++++++++++++++++++++++ Stack and Heap Memory +++++++++++++++++++++++++++++
+originalAge = 28;
 
-// stack (Primitive)
-let firstUserCompanyName = "Realatte";
+// console.log(age);
+// console.log(originalAge);
 
-let secondUserCompanyName = firstUserCompanyName;
+// ++++++++++++++++++++++++++++++++++ Non-Primitive(call by Reference) +++++++++++++++++++++++++++++++++++++
 
-secondUserCompanyName = "Chai aur Code"
-
-// console.log(firstUserCompanyName);
-// console.log(secondUserCompanyName);
-
-// Heap (Non-primitive)
-
-let obj2 = {
-    email : "user@google.com",
-    isAdmin: false
+let myObj = {
+  firstName: "Shiva",
+  lastName: "Sahani",
+  age: 28,
+  city: "Thane",
 };
 
-let obj3 = obj2;
+let otherObj = { ...myObj };
+// console.log("Before age Updated :", myObj);
 
-obj3.email = "shiva@google.com"
+Object.freeze(myObj);
+otherObj.age = 18;
 
-console.log(obj2);
-console.log(obj3);
+// console.log("After age updated :", myObj);
+// console.log(otherObj);
+
+let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let otherMyArray = myArray;
+
+otherMyArray.pop();
+
+console.log(myArray);
+console.log(otherMyArray);
