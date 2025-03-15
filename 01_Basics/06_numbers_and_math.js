@@ -1,34 +1,35 @@
-const score = 400459;
+const score = 100;
 
-// const { price } = req.body;     // "100"
+// const { score } = req.body;   // 100, "100", "100abc", "abc"
 
-const gameCount = new Number(100.345);
+const balance = new Number(400);
 
-console.log(typeof score);
-console.log(gameCount.toString());
-console.log(gameCount.toFixed(2)); // after the dicimal how many digits take
+const gameCount = Number(500);
 
-console.log(score.toExponential(3));
+// console.log(`${score} : ${typeof score}`);
+// console.log(`${balance} : ${typeof balance}`);
+// console.log(`${gameCount} : ${typeof gameCount}`);
 
-console.log(score.toLocaleString("en-US"));
+// +++++++++++++++++++++++++++++++ Maths ++++++++++++++++++++++++++++
 
-// ++++++++++++++++++++++++++ Maths +++++++++++++++++++++++++++
+const randomNumber = Math.random() * 100;
 
-const randomNumber = Math.floor(Math.random() * 10);
+// console.log(Math.floor(randomNumber));
+// console.log(Math.ceil(randomNumber));
+// console.log(Math.round(randomNumber));
 
-// console.log(randomNumber + 10);
+console.log(Math.pow(2, 4));
 
-console.log(Math.ceil(4.2));
-console.log(Math.floor(4.7));
-console.log(Math.round(4.2));
+let numbers = [1, 2, 3, 4, 15, 6, 7, 8, 9, 10];
 
-console.log(Math.pow(2, 0));
+console.log(Math.max(...numbers));
+console.log(Math.min(...numbers));
 
-function showMessage(marks) {
-  const message = marks || "Absent";
-  console.log(`Marks is : ${message}`);
-}
+const showMessage = (marks) => {
+  const txt = marks ?? "Absent";
+  console.log(`Marks : ${txt}`);
+};
 
-showMessage(75);
-showMessage(0);
-showMessage(50);
+showMessage("Shiva");
+showMessage("");
+showMessage("Sahani");
