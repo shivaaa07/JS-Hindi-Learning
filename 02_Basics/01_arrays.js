@@ -1,30 +1,47 @@
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// numbers.push(true)
-// numbers.push("Shiva")
-// numbers.pop()
+const numbers = [];
 
-numbers.unshift(100);
+const fruits = new Array("Kiwi", "Mango", "Pinepple", "Banana");
 
-// console.log(numbers.length);
-numbers.shift()
+const prograamingLangauges = Array(
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Node.js",
+  "Express.js",
+  "Angular.js",
+  "Tailwind.CSS"
+);
 
-// console.log(numbers)
+// console.log(numbers);
+// console.log(fruits);
+// console.log(typeof PrograamingLangauges);
 
+// ++++++++++++++++++++++ Methods +++++++++++++++++++
 
-const myArray = [];
+// numbers.push(11);
+// numbers.push(100);
+// numbers.pop();
 
-// console.log(myArray.shift())        // when array is empty then reutrn the undefined value
+// numbers.unshift(12);
+// numbers.unshift(11);
+// numbers.shift();        // When array is empty then it return the empty array and if the array has element it remove from start of array
+// console.log("A :", prograamingLangauges);
 
-// console.log(myArray.pop())          // when array is empty then reutrn the undefined value
+// console.log(prograamingLangauges.slice(2, 5));
 
-// +++++++++++++++++++++++++++ Array Method +++++++++++++++++++++++++
+// console.log("B :", prograamingLangauges);
 
-const arr1 = [1, 2, 3, 4, 5];
-const arr2 = [6, 7, 8, 9, 10];
+// console.log(prograamingLangauges.splice(2, 5));
 
-// const result = arr1 + arr2;      // it return the string 
-const result = arr1.concat(arr2);   // adding both array in single array and return it
+// console.log("C :", prograamingLangauges);
 
-console.log(result);
-console.log(typeof result);
+const mixOfArray = [1, 2, 3, 4, 5, true, "Shiva", null];
+
+const otherArray = [...mixOfArray];
+
+otherArray.push("Sahani");
+
+console.log("Mix of Array:", mixOfArray);
+console.log("Other Array: ", otherArray);
