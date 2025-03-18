@@ -1,40 +1,33 @@
-const name = "Shiva";
-let repoCount = 50;
+let userName = "Shiva"; // defined String on String Literal
 
-// console.log("My nams is " + name + " and my repo count is " + repoCount + " Value");     // do not use this syntex
+let state = new String("Mumbai"); // definned String as a Object
 
-// String Interpolation
+let address = String("Hanuman Chawl");
 
-// console.log(`My name is ${name.toUpperCase()} and my repo count is ${repoCount}.`);
+// const { city } = req.body;      // true
 
-const gameName = new String("hitesh-hc-com");
+// console.table([typeof userName, typeof state, typeof address]);
 
-// console.log(gameName.length);
-// console.log(gameName[0]);
+// +++++++++++++++++++++++++++++++ Method ++++++++++++++++++++++++
 
-// console.log(gameName.charAt(-3));
-// console.log(gameName.at(-3));
+let msg = "Welcome";
 
+// console.log(msg.charAt(-11)); // return the character of specified index if index is negative then return the empty string
+// console.log(msg.at(-11)); // return the character of specified index if negative index then return the value end of the sentance
+// console.log(msg.concat(" Learning the JS")); // add to string in single value and return the string
+// console.log(msg.indexOf("t", 9));
+// console.log(msg.lastIndexOf("e", -2));  // it return the index of specified character if character are  not exist then return -1 value
 
-// console.log(gameName.indexOf("h", 1));
-// console.log(gameName.lastIndexOf("h"));
+// console.log(msg.repeat()); // it return the copie of string and if count is not defined or zero it return the empty value
 
-// console.log(gameName.includes("Hitesh"))
+// console.log(msg.includes("L"));
+// console.log(msg.replace("e", "z"));
+// console.log(msg.replaceAll("e", "z"));
 
-// console.log(gameName.substring(5, 3));
+// console.log(msg.substring(-5));
+// console.log(msg.slice(-5, -3));
 
-// console.log(gameName);
-
-// console.log(gameName.slice(5, 3));
-
-// console.log(gameName.replaceAll("-", "_"))
-
-// console.log(gameName.split("-"))
-
-const str = "The-quick-brown-fox-jumps-over-the-lazy-dog.";
-
-console.log(str.split("-", 3))
-
+console.log(msg.split(""));
 
 /*
     String Methods in JavaScript
