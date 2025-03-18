@@ -1,39 +1,37 @@
-const score = 100;
+const score = 4000;
 
-// const { score } = req.body;   // 100, "100", "100abc", "abc"
+// const { gameScore } = req.body;
 
-const balance = new Number(400);
+const balance = new Number(100);
 
-const gameCount = Number(500);
+const gameCount = Number(200);
 
-// console.log(`${score} : ${typeof score}`);
-// console.log(`${balance} : ${typeof balance}`);
-// console.log(`${gameCount} : ${typeof gameCount}`);
+// console.log(typeof score);
+// console.log(typeof balance);
+// console.log(typeof gameCount);
 
-// console.log(gameCount.toExponential(3));
-// console.log(gameCount.toFixed(2));
-console.log(gameCount.toString().length);
+// console.log(score.toExponential(5));
+// console.log(score.toFixed(2));
+// console.log(score.toLocaleString());
+// console.log(score.toString(16));
 
-// +++++++++++++++++++++++++++++++ Maths ++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++ Maths +++++++++++++++++++++++++++++
 
-const randomNumber = Math.random() * 100;
+let randomNumber = Math.random();
 
-// console.log(Math.floor(randomNumber));
-// console.log(Math.ceil(randomNumber));
-// console.log(Math.round(randomNumber));
+// let naturalNumber = Math.floor(randomNumber * 10);
+// let naturalNumber = Math.ceil(randomNumber * 10);
+let naturalNumber = Math.round(randomNumber * 10);
 
-// console.log(Math.pow(2, 4));
+// console.log(randomNumber);
+// console.log(naturalNumber);
 
-let numbers = [1, 2, 3, 4, 15, 6, 7, 8, 9, 10];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// console.log(Math.max(...numbers));
-// console.log(Math.min(...numbers));
+const maxValue = Math.max(...numbers);
+const minValue = Math.min(...numbers);
 
-const showMessage = (marks) => {
-  const txt = marks ?? "Absent";
-  console.log(`Marks : ${txt}`);
-};
+console.log(maxValue);
+console.log(minValue);
 
-// showMessage("Shiva");
-// showMessage("");
-// showMessage("Sahani");
+console.log(Math.pow(2, 4));
