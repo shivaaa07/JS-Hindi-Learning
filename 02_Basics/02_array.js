@@ -1,26 +1,56 @@
-const marvel_heros = ["thor", "ironman", "spiderman"];
-const dc_heros = ["superman", "flash", "batman"];
+const classic_biks = ["splender", "platina", "iSarmt", "HFDelex"];
 
-// marvel_heros.push(dc_heros)
+const sport_bike = ["MT15", "R15", "ZX10R", "Z900"];
 
-// console.log(marvel_heros)
+const bikes = ["RX100", "Plaser220"];
 
-const allHeros = marvel_heros.concat(dc_heros)  // adding element to end of the array and return the new array
+// classic_biks.push(sport_bike);
 
-// console.log(allHeros)
+const allBikes = classic_biks.concat(sport_bike, bikes);
 
-const allNewHeros = [...marvel_heros, ...dc_heros];     // add multiple array in single array
+const allNewBikes = [...classic_biks, ...sport_bike, ...bikes];
 
-// console.log(allNewHeros)
+// console.log(allBikes);
+// console.log(allNewBikes);
 
-const another_array = [1, 2, 3, 4, 5, [6, 7, 8], 9, 10, [9, 8, 7, [6, 5, [11, 12, 13], 4, 3], 2], 1];
+const nestedArray = [
+  1,
+  2,
+  3,
+  [4, 5, 6],
+  7,
+  8,
+  [9, 10, 11, [12, 13, 14], 15],
+  16,
+];
 
-// console.log(another_array.flat(3))      // flat method return new array with all sub-element concatnated in single array
+const singleArray = nestedArray.flat(2);
 
-let isArrays = Array.isArray(another_array);    // check the passed value is array or not
+// console.log(singleArray);
 
-// console.log(isArrays)
+// +++++++++++++++++++++++ Static Method of Array +++++++++++++++++++++++++
 
-let createdArray = Array.from("Shiva");
+// let checkArray = Array.isArray("Shiva");
+// let checkArray = Array.isArray("[]");
+// let checkArray = Array.isArray([]);
+let checkArray = Array.isArray(null); // checking the value is array or not
 
-console.log(createdArray)
+// console.log(checkArray);
+
+let createdByFromMethod = Array.from(
+  // Created new array
+  [1, 2, 3, 4, 5, 6],
+  (character) => character / 2
+);
+// let createdByFromMethod = Array.from("Shiva", (character) =>
+//   character.toUpperCase()
+// );
+
+// console.log(createdByFromMethod);
+
+// const elementsArray = Array.of(11, 2, 3, 4, 5, 6, 7);
+const elementsArray = Array.of(7);
+const constrctorArray = Array(7);
+
+console.log(elementsArray.length);
+console.log(constrctorArray.length);
