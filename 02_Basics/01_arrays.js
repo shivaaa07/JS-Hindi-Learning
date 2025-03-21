@@ -1,12 +1,28 @@
-// Defined Array with new keyword
-const numbers = new Array(1, 2, 3, 4, 5, 6);
+//  Array Constructor
+const createdArrayUsingConstuctor = new Array(6);
+// console.log(createdArrayUsingConstuctor);
 
-// Defined Array without new keyword
-const fruits = Array("Mango", "Apple", "Banana", "Kiwi");
+// const withOutNewKeywordConstructor = Array("Shiva", "Sahani", "Test", "demo");   // Created numbers of element
+const withOutNewKeywordConstructor = Array(10);     // created empty slot of number that given by parameter 
+// console.log(withOutNewKeywordConstructor);
 
-// Difineding Array Using Array Litrals
-const programmingLangauge = ["JavaScirpt", "Python", "C++", "C", "Java"];
+// Arrary Literals
+const myArray = [1, 2, 3, 4, 5, 6, 7];
+// console.log(myArray);
 
-console.log(numbers);
-console.log(fruits);
-console.log(programmingLangauge);
+
+const usingOfArray = Array.of(6);
+// console.log(usingOfArray.length);
+
+// +++++++++++++++++++++ Methods +++++++++++++++++++++++
+
+const myNewArray = [1, 2, 3, 4, 5, 6, 7];
+// const myNewArray = [];
+
+// myNewArray.push(8)
+// myNewArray.push(9)   // add element to last index of array
+// myNewArray.pop()     // remove element to last index of array
+// myNewArray.unshift(0)    // add element to first index of array
+// myNewArray.shift()       // remove element to first index of array
+
+console.log(myNewArray)
