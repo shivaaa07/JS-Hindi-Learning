@@ -1,78 +1,33 @@
-const classic_biks = ["splender", "platina", "iSarmt", "HFDelex"];
+const sportBike = ["R15", "MT15", "Z900", "ZX10R"];
 
-const sport_bike = ["MT15", "R15", "ZX10R", "Z900"];
+const classicBike = ["Royal Enfield 350", "Yamaha RX100", "Splender", "Bajaj Platina"];
 
-const bikes = ["RX100", "Plaser220"];
+// sportBike.push(classicBike);
 
-// classic_biks.push(sport_bike);
+const allBikes = sportBike.concat(classicBike); 
 
-const allBikes = classic_biks.concat(sport_bike, bikes);
+const allBikeCollections = [...sportBike, ...classicBike];    // Speard Operator
 
-const allNewBikes = [...classic_biks, ...sport_bike, ...bikes];
-
+// console.log(sportBike);
 // console.log(allBikes);
-// console.log(allNewBikes);
+// console.log(allBikeCollections);
 
-const nestedArray = [
-  1,
-  2,
-  3,
-  [4, 5, 6],
-  7,
-  8,
-  [9, 10, 11, [12, 13, 14], 15],
-  16,
-];
+// nested Array
+const nestedArray = [1, 2, 3, [4, 5, 6, [7, 9, 8], 10, 11], 12, [13, 14, [115, 16, 117], 18, 19], 20];
 
 const singleArray = nestedArray.flat(2);
 
-<<<<<<< HEAD
+// console.log(nestedArray);
 // console.log(singleArray);
-=======
-let isArrays = Array.isArray(another_array);    // check the passed value is array or not and return Boolean value
->>>>>>> a4a6b87 (array)
 
-// +++++++++++++++++++++++ Static Method of Array +++++++++++++++++++++++++
+// +++++++++++++++++++++ Static Methods ++++++++++++++++++++++
 
-// let checkArray = Array.isArray("Shiva");
-// let checkArray = Array.isArray("[]");
-// let checkArray = Array.isArray([]);
-let checkArray = Array.isArray(null); // checking the value is array or not
+// console.log(Array.isArray("Shiva"));    // check given value is array or not
 
-<<<<<<< HEAD
-// console.log(checkArray);
+const createdArrayFromMethod = Array.from([1, 2, 3, 4], nums => nums*0.5);    
 
-let createdByFromMethod = Array.from(
-  // Created new array
-  [1, 2, 3, 4, 5, 6],
-  (character) => character / 2
-);
-// let createdByFromMethod = Array.from("Shiva", (character) =>
-//   character.toUpperCase()
-// );
+// console.log(createdArrayFromMethod);
 
-// console.log(createdByFromMethod);
+const createdArrayWithOfMethod = Array.of("Shiva", "Sahani", "Azim");
 
-// const elementsArray = Array.of(11, 2, 3, 4, 5, 6, 7);
-const elementsArray = Array.of(7);
-const constrctorArray = Array(7);
-
-console.log(elementsArray.length);
-console.log(constrctorArray.length);
-=======
-// console.log(createdArray)
-
-
-
-// +++++++++++++++++++++++++++++++++++ Self Learning +++++++++++++++++++++++++++++++
-
-// isArray static method check the value passed is array or not 
-// const anotherArray = Array.isArray(new Array("a", "b", "c", "d"));
-const anotherArray = Array.isArray(null);
-
-// console.log(Array.isArray(new Array(3)))
-
-// console.log(anotherArray)
-
-console.log(Array.from([1, 2, 3], (x) => x + x));
->>>>>>> a4a6b87 (array)
+console.log(createdArrayWithOfMethod)
