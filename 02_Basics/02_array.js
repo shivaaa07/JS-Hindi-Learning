@@ -26,7 +26,11 @@ const nestedArray = [
 
 const singleArray = nestedArray.flat(2);
 
+<<<<<<< HEAD
 // console.log(singleArray);
+=======
+let isArrays = Array.isArray(another_array);    // check the passed value is array or not and return Boolean value
+>>>>>>> a4a6b87 (array)
 
 // +++++++++++++++++++++++ Static Method of Array +++++++++++++++++++++++++
 
@@ -35,6 +39,7 @@ const singleArray = nestedArray.flat(2);
 // let checkArray = Array.isArray([]);
 let checkArray = Array.isArray(null); // checking the value is array or not
 
+<<<<<<< HEAD
 // console.log(checkArray);
 
 let createdByFromMethod = Array.from(
@@ -54,3 +59,20 @@ const constrctorArray = Array(7);
 
 console.log(elementsArray.length);
 console.log(constrctorArray.length);
+=======
+// console.log(createdArray)
+
+
+
+// +++++++++++++++++++++++++++++++++++ Self Learning +++++++++++++++++++++++++++++++
+
+// isArray static method check the value passed is array or not 
+// const anotherArray = Array.isArray(new Array("a", "b", "c", "d"));
+const anotherArray = Array.isArray(null);
+
+// console.log(Array.isArray(new Array(3)))
+
+// console.log(anotherArray)
+
+console.log(Array.from([1, 2, 3], (x) => x + x));
+>>>>>>> a4a6b87 (array)
