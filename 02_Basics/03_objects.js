@@ -31,5 +31,14 @@ jsUser.greetingTwo = function () {
   return `Hello JS user, ${this["full name"]}`;
 };
 
-console.log(jsUser.greeting());
-console.log(jsUser.greetingTwo());
+// console.log(jsUser.greeting());
+// console.log(jsUser.greetingTwo());
+
+// const myObj = new Object();
+// const myObj = new Object(null);
+// const myObj = new Object(undefined);
+const myObj = new Object(BigInt);
+
+// myObj["name"] = "Shiva";
+
+console.log(myObj);
