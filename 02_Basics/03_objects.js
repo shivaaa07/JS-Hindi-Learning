@@ -1,39 +1,42 @@
 // Singleton
-// const singletonObject = Object.create();
-
-const myObj =  new Object()
-// console.log(singletonObject);
-// console.log(myObj);
+// Object.create()
 
 // Object Literals
 
-const mySym = Symbol(123);
+const mySym = Symbol("Jyoti");
 
-const jsUser = {
-  name: "Shiva",
-  age: 28,
-  email: "shiva@gmail.com",
-  "full Name": "Shivaa Sahani",
+const myObj = {
+  firstName: "Shiva",
+  lastName: "Sahani",
+  "Full Name": "Shivkumar Sahani",
+  [mySym]: "Jyoti Das",
+  age: 18,
+  email: "shiva@google.com",
+  city: "Jaipur",
   isLoggedIn: false,
-  [mySym]: "Jyoti"
 };
 
-// console.log(jsUser);
-// console.log(jsUser[mySym]);
+console.log(myObj[mySym]);
+console.log(myObj);
+// console.log(myObj["Full Name"]);
+// console.log(myObj.city);
 
-// Object.freeze(jsUser)   // after the freeze method Object are Immutable
-jsUser.email = "shiva.sahani@googgle.com";
+myObj["email"] = "shiva@chatgpt.com";
 
-jsUser.greetng = function() {
-  console.log("Hello JS User!");
-}
+// Object.freeze(myObj);     // After the freeze method Object can not be change
 
-jsUser.greetngTwo = function() {
-  console.log(`Hello JS User!, ${this["full Name"]}`);
-}
+myObj.email = "shiva@microsoft.com";
 
-// console.log(jsUser);
+// console.log(myObj);
 
-// console.log(jsUser.greetng)
+myObj["greeting"] = function () {
+  console.log("Hello JavaScript User🙌");
+};
 
-jsUser.greetngTwo()
+myObj.greetingTwo = function () {
+  console.log(`Hello JavaScript User🙌 ${this["Full Name"]}`);
+};
+
+// myObj.greeting()
+// myObj["greeting"]();
+// myObj.greetingTwo();
