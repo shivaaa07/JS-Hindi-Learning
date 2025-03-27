@@ -1,47 +1,40 @@
 /*
-1) What is the Function
-Ans) In JavaScript, a function is a reusable block of code designed to perform a specific task. 
+  1) What is Function in JavaScript
+  Ans) In JS, a function is a reusable block of code design to perform specific task.
+  => A function definition is also called a function declaration or function statement consist of the funtion keyword.
 */
 
-// console.log("S");
-// console.log("H");
-// console.log("I");
-// console.log("V");
-// console.log("A");
-// console.log("A");
-// console.log("\n");
+// Normal Funtion
+function greeting() {
+  return `Welcome to JS Youtube Serise by Hitesh Sir.`
+}
+// console.log(greeting());
 
-// Normal function
-function printMyName() {
-  console.log("S");
-  console.log("H");
-  console.log("I");
-  console.log("V");
-  console.log("A");
-  console.log("A");
-  console.log("\n");
+// Funtion with Parameter
+function squareOfNumber(number) {
+  return `The Square of number ${number} is : ${number * number}`;
 }
 
-// printMyName();
+// console.log(squareOfNumber(4));
 
-// function addTwoNumber() {
-//     console.log(3 + 5);
-// }
+// function with opational parameter
+function addTwoNumber(num1 = 10, num2 = 21) {
+  return `The Sum of Two number is : ${num1 + num2}`
+}
+// console.log(addTwoNumber(12, 12));
 
-// addTwoNumber()
+// let name = "Jyoti Das";
 
-// funtion with parameter
-function addTwoNumber(number1, number2) {       // Parameter
-    console.log(number1 + number2);
+const funObj = {
+  name: "Shiva",
+  age: 18,
+  arrowFunction: ()=> {
+    console.log(`Hello ${this.name}`)
+  },
+  normalFuntion: function() {
+    console.log(`Welcome ${this.name}`);
+  }
 }
 
-// const result = addTwoNumber(12, "12");      // Argummments
-
-// funtion with return Keyword
-function greeting(userName = "Guest") {
-    return `Welcome ${userName}, How are you?`
-}
-
-const msg = greeting("Shiva Sahani");
-
-console.log(msg);
+funObj.arrowFunction();
+funObj.normalFuntion();
