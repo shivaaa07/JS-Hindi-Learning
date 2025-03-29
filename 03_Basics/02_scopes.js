@@ -1,24 +1,58 @@
-// import { addToNumber } from "app.js"
+// var c = 400;
 
-// var c = 300;     // var keyword are not to use because of it's a globle scope.
-
-if (1) {
-    let a = 10;
-    const b = 20;
-    var c = 30;
+if (true) {
+  let a = 10;
+  const b = 200;
+  var c = 30;
+  // console.log("INNER :", a);
 }
 
 // console.log(a);
 // console.log(b);
 // console.log(c);
 
+function one() {
+  const firstName = "Shiva";
+  function two() {
+    const lastName = " Sahani";
+    console.log(firstName + lastName);
+  }
+//   console.log(lastName);
+  two();
+}
+// console.log(firstName);
+
+// one();
+
 if (true) {
     let userName = "Shiva";
     if (userName === "Shiva") {
-        let lastName = " Sahani";
-        // console.log(userName + lastName);
+        let website = " YouTube";
+        console.log(userName + website); 
     }
-    // console.log(lastName);
+    // console.log(website);
 }
 
 // console.log(userName);
+
+// ++++++++++++++++++++++++++++ Hosting ++++++++++++++++++++++++++
+
+console.log(addOne(5));
+
+function addOne(number) {
+    return number + 1;
+}
+
+// Normal Function
+// console.log(addTwo(5));
+
+const addTwo = function(num) {
+    return num + 2;
+}
+
+// Arrow function
+const addThree = (number) => {
+    return number + 3;
+}
+
+console.log(addThree(5));
