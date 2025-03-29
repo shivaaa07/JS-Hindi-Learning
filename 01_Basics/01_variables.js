@@ -1,20 +1,21 @@
-const accountId = 12345;
-let accountEmail = "shivasahani@gmail.com";
-var accountPassword = "Sahani#123";
-accountCity = "Jaipur";
+const accountId = 123;
+let accountEmail = "shiva@google.com";
+var accountPassword = "Shiva@1223";
+accountCity = "Mumbai";
 let accountState;
 
-// accountId = 2;
+// accountId = 2;   // Not allowed
 
-// console.log(accountId);  // Not Allowed to re-assign to constant variable
+accountEmail = "ss@google.com";
+accountPassword = "Sahani#1213";
+accountCity = "Jaipur"
 
-accountEmail = "shiva@google.com";
-accountPassword = "Google#321";
-accountCity = "Bengaluru";
+// console.log(accountId);
 
 /*
-    prefer not to use var keyword 
+    Prefer not to use var keyword for variable declaration
     because of issue in block scope and functional scope
 */
 
-console.table([accountId, accountEmail, accountPassword, accountCity, accountState]);
+console.table([accountId, accountEmail, accountPassword, accountCity,, accountState]);
+

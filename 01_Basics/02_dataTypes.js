@@ -1,29 +1,31 @@
-"use strict";       // Treat all Code as newer version of JavaScript
+"use stric"    // treat all JS code as newer version
 
-// alert("Hello World!");        // we are using node.js not broswer
+// alert("Hello Shiva");         // we are using node.js, Not browser
 
-// console.log("Shiva")  console.log("Sahani")       // Not to write this type of code because code readability should be high
+// console.log(3 + 3); console.log("Hello World");   // code readability sould be high
 
-console.log(
+console.log(3 + 
      3
-     +
-     3
-)         // Prefer not to use
+)         // This is not a good practies to write a code
+
+let userName = "Shiva";
+let age = 18;
+let isLoggedIn = false;
+
 
 /*
-     Number => 2 to power 53
-     String => "Shiva"
-     Boolean => true/false
-     null => Standalone value
-     undefined => 
-     symbol => Unique datatype
-
-     Object
+     1) String
+     2) Number
+     3) Boolean
+     4) null
+     5) undefined
+     6) symbol
+     7) bigInt
+     
+++++++++++++++++++ Non-Primitive(call by reference) ++++++++++++
+     1) Object
+     2) Array
+     3) function
 */
 
-
-let userName = "Shiva Sahani";
-let age = 28;
-let isLoggedIn = true
-
-console.log(typeof undefined);
+console.log(typeof age);
